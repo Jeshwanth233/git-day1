@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="SIRI Logistics: Luxury bus transportation, premium and safe travel services.">
+  <title>SIRI Logistics - Luxury on Wheels</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="luxury-bg">
+  <header>
+    <nav>
+      <img src="SIRI-LOGISTICS.jpg" alt="SIRI Logistics Logo" class="logo">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="BUS2.jpg" alt="SIRI Logistics buses" class="hero-bus">
+    <div class="hero-overlay">
+      <h1>Luxury on Wheels</h1>
+      <p>Safe, Reliable, and Comfortable Travel</p>
+      <a href="#booking" class="cta primary">Book Now</a>
+      <a href="#fleet" class="cta secondary">View Fleet</a>
+    </div>
+  </section>
+  <section id="about" class="about-us curved">
+    <h2>Our Mission</h2>
+    <p>
+      At SIRI Logistics, our passion is providing <span>premium travel solutions</span> defined by safety, luxury, and reliability. Years of dedicated service and a modern, impeccably maintained fleet ensure every journey is as comfortable as it is memorable. Your safety and satisfaction are our top priorities.
+    </p>
+    <div class="values">
+      <div>✔ Experienced Drivers</div>
+      <div>✔ Premium Fleet</div>
+      <div>✔ 24/7 Customer Care</div>
+      <div>✔ Trust & Transparency</div>
+    </div>
+  </section>
+  <section id="services" class="our-services gradient-bg">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="BUS2.jpg" alt="Luxury Tours Bus">
+        <h3>Luxury Tours</h3>
+        <p>Travel in style and comfort across cities and scenic routes.</p>
+      </div>
+      <div class="service-card">
+        <img src="BUS.jpg" alt="Corporate Bus">
+        <h3>Corporate Travel</h3>
+        <p>Premium coach services for company events and executive travel.</p>
+      </div>
+      <div class="service-card">
+        <img src="BUS2.jpg" alt="Group Trips">
+        <h3>Group Trips</h3>
+        <p>Ideal for school outings, family excursions, and team events.</p>
+      </div>
+      <div class="service-card">
+        <img src="BUS.jpg" alt="City Transfers">
+        <h3>City Transfers</h3>
+        <p>Safe, punctual transfers for city commutes or hotel shuttles.</p>
+      </div>
+      <div class="service-card">
+        <img src="BUS2.jpg" alt="Event Rentals">
+        <h3>Wedding & Event Rentals</h3>
+        <p>Make your celebrations seamless with our premium buses.</p>
+      </div>
+    </div>
+  </section>
+  <section id="fleet" class="fleet-showcase parallax">
+    <h2>Our Fleet</h2>
+    <div class="fleet-gallery">
+      <img src="BUS2.jpg" alt="SIRI Logistics Fleet" class="gallery-img hover-zoom">
+      <img src="BUS.jpg" alt="Individual Bus" class="gallery-img hover-zoom">
+    </div>
+  </section>
+  <section id="booking" class="booking-form-section curved">
+    <h2>Book Your Journey</h2>
+    <form class="booking-form">
+      <input type="text" placeholder="Destination" required>
+      <input type="date" required>
+      <input type="number" min="1" max="50" placeholder="Passengers" required>
+      <button type="submit" class="cta primary">Check Availability</button>
+    </form>
+  </section>
+  <section class="testimonials soft-glow">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-cards carousel">
+      <div class="testimonial-card">
+        <p>"The most comfortable journey I've ever had. Highly recommended!"</p>
+        <strong>- A. Gupta</strong>
+      </div>
+      <div class="testimonial-card">
+        <p>"Polite staff and spotlessly clean buses. Will book again."</p>
+        <strong>- R. Kumar</strong>
+      </div>
+      <!-- Add more feedback here -->
+    </div>
+  </section>
+  <section id="contact" class="contact-section curved">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input placeholder="Your Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit" class="cta secondary">Send Message</button>
+    </form>
+    <div class="contact-details">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." frameborder="0" class="map"></iframe>
+      <a class="whatsapp-btn pulse" href="https://wa.me/your-number" target="_blank">WhatsApp Chat</a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 SIRI Logistics. Luxury travel, redefined.</p>
+  </footer>
+</body>
+</html>
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0; padding: 0; color: #e3f6fb; background: linear-gradient(120deg,#0a2239 90%,#11b5e4 100%);
+}
+
+header {
+  background: #09203f;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header nav { display: flex; align-items: center; }
+.logo { height: 54px; border-radius: 50%; margin-right: 1rem; box-shadow: 0 2px 15px 3px #0ff7f0; }
+nav ul { display: flex; gap: 2rem; list-style: none; }
+nav ul a { color: #ffd700; text-decoration: none; font-weight: 700; font-size: 1.06rem; }
+
+.hero {
+  position: relative; min-height: 420px; display: flex; align-items: center; justify-content: center;
+}
+.hero-bus {
+  width: 100vw; max-width: 120vw; height: 440px; object-fit: cover; filter: brightness(0.7) blur(1px);
+  box-shadow: 0 10px 35px 4px #07385988;
+}
+.hero-overlay {
+  position: absolute; left:0; right:0; top: 35%; text-align: center; color: #fff;
+}
+.hero h1 { font-size: 3rem; font-weight: 700; color: #ffd700; text-shadow: 0 4px 32px #005960; }
+.hero p { font-size: 1.35rem; color: #fff; opacity: 0.95; letter-spacing: 1.5px; }
+.hero-cta { margin-top: 1.7rem; }
+.cta { border-radius: 30px; padding: 0.9em 2.1em; font-size: 1rem; text-decoration: none; font-weight: 700; transition: all 0.18s }
+.primary { background: linear-gradient(90deg,#ffd700,#11b5e4); color: #0a2239; box-shadow: 0 2px 15px #11b5e466;}
+.secondary { background: none; border: 2px solid #ffd700; color: #ffd700; margin-left: 1.1em;}
+.cta:hover, .secondary:hover { filter: brightness(1.07); box-shadow: 0 2px 35px 3px #0ff7f077; }
+
+.curved, .gradient-bg, .parallax, .contact-section { border-radius: 58px 0 58px 0 / 30px 80px 30px 80px; margin: 3.8rem 3vw 3.3rem 3vw; background: #102742ee; padding: 2.6rem 2vw; box-shadow: 0 4px 32px #00799844;}
+.gradient-bg { background: linear-gradient(120deg,#074070 80%,#22eaf5ad 100%); }
+h2 { font-size: 2.25rem; letter-spacing: 2.2px; background: linear-gradient(93deg, #08aeea 77%, #fde274 100%); -webkit-background-clip: text; color: transparent;}
+.lux { color: #ffd700; font-weight: 600; }
+.values { display: flex; gap: 1.5rem; flex-wrap: wrap; color: #c0fafc; font-size: 1.03rem; font-weight: 500; margin-top: 0.75rem; }
+.values li { background: #0ff7f033; border-radius: 22px; padding: 0.6em 1.2em; margin-right: 1em; list-style: none;}
+.services-grid {display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; margin-top: 2rem;}
+.service-card { background: #12325d; border-radius: 40px 4px 16px 40px; padding:2rem 1rem 1.5rem; box-shadow:0 3px 28px #1bb0c740; text-align:center; transition: transform 0.26s; }
+.service-card:hover { transform:translateY(-7px) scale(1.03); box-shadow:0 7px 38px #10f9e088;}
+.service-card img { width: 97%; border-radius: 30px 0 34px 0; box-shadow: 0 4px 22px #03d7f285;}
+.service-card h3 {margin: 1.1rem 0 0.6rem; font-size: 1.25rem; color:#ffd700;}
+.service-card p { color: #e9f6f3; }
+
+.fleet-gallery { display: flex; gap: 2vw; justify-content: center; align-items: center; margin: 2.5rem 0 1rem 0;}
+.gallery-img { width: 38vw; max-width: 470px; height:320px; object-fit: cover; border-radius: 35px 75px 75px 35px; box-shadow: 0 3px 33px #66f3f5aa; transition:transform 0.35s; }
+.gallery-img:hover { transform: scale(1.04) translateY(-8px); box-shadow: 0 11px 44px #06fdfa; }
+@media (max-width:800px){.fleet-gallery{flex-direction:column;}.gallery-img{width:90vw;max-width:98vw;}}
+
+.booking-form-section form, .contact-form {display: flex; flex-direction: column; gap: 1.2rem; max-width:440px; margin:auto;}
+.booking-form input, .contact-form input, .contact-form textarea {
+  padding: 1em; border-radius: 19px; border: none; outline: none; background: #f8f8fb12; color: #fff; font-size:1.04rem; box-shadow:0 2px 22px #46dff755;}
+.booking-form input:focus, .contact-form input:focus, .contact-form textarea:focus {box-shadow:0 0 0 2px #1ff8ea;}
+
+.testimonials { background: #143060; border-radius: 48px; margin: 4vw 0 4vw 0; padding: 2vw;}
+.testimonial-cards {display:flex; gap:2.2rem; overflow-x:auto; padding: 0.5rem;}
+.testimonial-card { background:#184899; border-radius:32px; padding:1.7rem 1.3rem; min-width:250px; box-shadow:0 5px 18px #10c4e577; color:#fff; font-size:1.05rem; transition:transform 0.19s;}
+.testimonial-card:hover {transform:scale(1.04) translateY(-3px);box-shadow:0 7px 28px #11eaf588;}
+.testimonial-card strong{display:block;margin-top:.8em;color:#ffd700;}
+
+.contact-section { margin-bottom:2vw; padding-bottom:3rem;}
+.contact-details { display: flex; gap: 2vw; justify-content:center; align-items:center; margin-top:2rem;}
+.map { border-radius:22px; width:340px; height:200px; border:0; box-shadow:0 0 18px #00e9ff44;}
+.whatsapp-btn {display:inline-block;background:linear-gradient(90deg,#00ffb7 50%,#00cffe 100%);color:#073859;font-weight:700;padding:0.7em 1.8em;border-radius:30px;text-align:center;text-decoration:none;box-shadow:0 2px 12px #01ffe0aa;transition:filter 0.17s;}
+.whatsapp-btn:hover {filter:brightness(1.16);}
+@media (max-width:1000px){.contact-details{flex-direction:column;}.map{width:97vw;max-width:96vw;}}
+
+footer { margin-top: 1vw; background: #08213a; color: #fff; text-align:center; padding: 1.5em 0; font-size:1.07rem; border-radius: 40px 40px 0 0; }
+
+@media (max-width: 700px) {
+  header nav ul { flex-direction: column; background: rgba(8,20,35,0.95); position: absolute; left: 0; right: 0; top: 4.9rem; display: none; }
+  .logo { height:38px; }
+  .values, .fleet-gallery, .testimonial-cards{ flex-direction:column; gap:9px;}
+  h1 { font-size: 2.1rem; }
+  h2 { font-size: 1.28rem;}
+  .service-card {padding:1.2rem;}
+}
+span.lux {color: #ffd700;}

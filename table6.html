@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        table {
+            width: 20%;
+            border-collapse: collapse;
+            border: 3px solid black; 
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black; 
+            padding: 10px;
+            font-size: 1.1em;
+        }
+        th {
+            font-weight: bold;
+            border-width: 2px; 
+        }
+   
+        .lunch {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="6">Time Table</th>
+            </tr>
+            <tr>
+                <th></th> <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th rowspan="5">Hours</th>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="lunch">LUNCH</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td rowspan="2">Project</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

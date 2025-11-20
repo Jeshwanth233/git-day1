@@ -1,0 +1,8 @@
+div::first-line{
+      background-color: red;
+      color: blue;
+}
+p{
+      background-color: blue;
+      color: black;
+}
