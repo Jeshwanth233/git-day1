@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIRI Logistics - Luxury On Wheels</title>
+  <meta name="description" content="Luxury, Safe, Reliable, and Comfortable Bus Travel - SIRI Logistics">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0E1A2B;
+      color: #fff;
+      font-family: 'Montserrat', Arial, sans-serif;
+      min-height: 100vh;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      padding: 44px 0 0 40px;
+      position: relative;
+    }
+    .logo-wrap {
+      display: flex;
+      align-items: flex-start;
+    }
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #13eefc 60%, #05244d 100%);
+      box-shadow: 0 0 36px 5px #24f9e6a0;
+      object-fit: cover;
+    }
+    .nav-links {
+      margin-left: 50px;
+      display: flex;
+      gap: 2.6rem;
+      font-size: 1.07rem;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      padding: 6px 7px;
+      border-radius: 5px;
+      transition: background 0.18s;
+    }
+    .nav-links a:hover {
+      background: #152743;
+    }
+    .header-curve {
+      position: absolute;
+      top: -46px; 
+      right: 0;
+      width: 450px;
+      height: 260px;
+      pointer-events: none;
+    }
+    /* Hero Section */
+    .hero-content {
+      margin-top: 30px;
+      padding-left: 8vw;
+      padding-top: 40px;
+      max-width: 720px;
+      z-index: 3;
+      position: relative;
+    }
+    .tagline {
+      font-size: 3.3rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 0;
+      line-height: 1.06;
+      margin-bottom: 17px;
+      letter-spacing: 0.02em;
+    }
+    .tag-sub {
+      color: #bec5ce;
+      margin-bottom: 24px;
+      font-size: 1.45rem;
+    }
+    .desc {
+      color: #d6ddec;
+      font-size: 1.1rem;
+      letter-spacing: 0.002em;
+      margin-bottom: 38px;
+      margin-top: 0;
+      font-weight: 400;
+    }
+    .cta-row {
+      display: flex;
+      gap: 22px;
+    }
+    .cta-btn {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      outline: none;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      padding: 14px 37px;
+      margin-right: 0;
+      margin-bottom: 0;
+      background: linear-gradient(95deg, #ffe481 16%, #ffd140 100%);
+      color: #1b1e23;
+      box-shadow: 0 5px 24px 0 #f5d87970;
+      transition: background .16s, box-shadow 0.15s;
+    }
+    .cta-btn:hover {
+      background: linear-gradient(95deg, #ffd93c 58%, #ffe477 100%);
+      box-shadow: 0 11px 40px #ffe175a2;
+    }
+    .cta-btn.alt {
+      background: #101521;
+      color: #fff;
+      outline: 1.2px solid #ffe481;
+      box-shadow: 0 4px 14px #21dbfa32;
+      transition: background .17s;
+    }
+    .cta-btn.alt:hover {
+      background: #1c2542;
+      color: #ffe176;
+    }
+
+    /* Responsive Flex Layout for Hero Section */
+    .hero-wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .hero-bus-img {
+      margin-top: 38px;
+      margin-right: 4vw;
+      width: 600px;
+      max-width: 650px;
+      object-fit: contain;
+      filter: drop-shadow(0px 28px 22px #000a);
+      z-index: 2;
+      border-radius: 19px;
+      background: transparent;
+    }
+    @media (max-width:1200px) {
+      .header-curve { display:none; }
+      .hero-bus-img { width: 430px; max-width: 95vw;}
+      .hero-content { max-width:98vw;padding-left:4vw;}
+    }
+    @media (max-width:900px) {
+      .hero-wrap { flex-direction:column;align-items: flex-start;}
+      .hero-bus-img { margin: 35px 0 0 9vw;}
+      .hero-content { margin-top:16px;}
+      nav { flex-direction: column;}
+      .nav-links { margin-left:0; }
+    }
+    @media (max-width:700px) {
+      .hero-wrap {flex-direction:column;}
+      .hero-bus-img { width:90vw;margin:35px 0 0 0;}
+      .hero-content { padding-left: 3vw;}
+      .logo { width:65px;height:65px;}
+      nav { padding-left:10px;}
+      .nav-links { gap: 18px; font-size:0.97rem;}
+      .tagline { font-size:2rem; }
+      .tag-sub { font-size: 1.05rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo-wrap">
+      <img src="SIRI-LOGISTICS.jpg" class="logo" alt="SIRI Logistics Logo"/>
+    </div>
+    <div class="nav-links">
+      <a href="#services">Our Services</a>
+      <span>-</span>
+      <a href="#fleet">Fleet</a>
+      <span>-</span>
+      <a href="#testimonials">Testimonials</a>
+      <span>-</span>
+      <a href="#about">About Us</a>
+      <span>-</span>
+      <a href="#contact">Contact</a>
+    </div>
+    <svg class="header-curve" viewBox="0 0 600 260" fill="none"><path d="M510 53c-30 70-196 120-430 150" stroke="#00eefd" stroke-width="18" stroke-linecap="round"/><circle cx="500" cy="46" r="6" fill="#00eefd" /></svg>
+  </nav>
+  <div class="hero-wrap">
+    <div class="hero-content">
+      <h1 class="tagline">Luxury On Wheels</h1>
+      <div class="tag-sub">Safe, Reliable, and Comfortable Travel</div>
+      <p class="desc">
+        Experience premium bus tours with safety, reliability, and comfort. Instant reels available in 10-15 mins.
+      </p>
+      <div class="cta-row">
+        <a href="#booking"><button class="cta-btn">Book Now</button></a>
+        <a href="#fleet"><button class="cta-btn alt">View Fleet</button></a>
+      </div>
+    </div>
+    <img src="siri.jpg" class="hero-bus-img" alt="Luxury Bus">
+  </div>
+</body>
+</html>
